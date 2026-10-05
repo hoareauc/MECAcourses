@@ -65,13 +65,9 @@ La définition du besoin est une étape délicate car les sollicitations initial
 
 #definition(title: "Le Besoin selon la norme NF X50-151")[
   Le besoin est une nécessité ou un désir éprouvé par un utilisateur. Il se structure autour de trois questions fondamentales :
-  - *À qui (ou à quoi) le système rend-il service ?* (Le bénéficiaire direct ou indirect).
-  - *Sur qui (ou sur quoi) le système agit-il ?* (La matière d'œuvre modifiée).
-  - *Dans quel but le système existe-t-il ?* (La finalité globale du produit).
-]
-
-#align(center)[
-  #image("images/bete_a_cornes.svg", width: 92%)
+  - *À qui (ou à quoi) le système rend-il service ?* (Le bénéficiaire direct ou indirect : au circuit de refroidissement et au bloc moteur).
+  - *Sur qui (ou sur quoi) le système agit-il ?* (La matière d'œuvre modifiée : sur le fluide caloporteur / liquide de refroidissement).
+  - *Dans quel but le système existe-t-il ?* (La finalité globale du produit : assurer la circulation forcée du liquide afin d'évacuer les calories excédentaires).
 ]
 
 === La Stratégie d'Enrichissement et les Phrases Autocorrectives
@@ -99,10 +95,6 @@ Le produit mécanique ne commence pas sa vie lors de son utilisation par le clie
   Le profil de vie est l'inventaire chronologique et exhaustif de toutes les situations rencontrées par le produit, depuis sa conception initiale jusqu'à son recyclage final. Il distingue rigoureusement deux catégories d'états :
   - Les phases *En Utilisation (U)* : moments où le produit remplit la mission principale pour laquelle il a été conçu.
   - Les phases *Hors Utilisation (H.U.)* : phases amont, aval ou intermédiaires (fabrication, transport, manutention, stockage, maintenance, démontage) qui imposent des contraintes majeures de conception.
-]
-
-#align(center)[
-  #image("images/cycle_de_vie.svg", width: 95%)
 ]
 
 === Inventaire Exhaustif des Phases et Sous-Phases de Vie
@@ -160,19 +152,9 @@ Le respect de la syntaxe graphique est indispensable pour garantir une analyse n
 7. *Prise en compte des EME bi-états :* Lorsque la matière d'œuvre change d'état au travers du système, on dédouble l'EME en deux états : $"EME"_(1a)$ (état initial entrant) et $"EME"_(1b)$ (état transformé sortant).
 8. *Systèmes autonomes :* Si le produit emporte sa propre source d'énergie (ex: batterie intégrée), celle-ci est englobée dans la frontière en pointillés pour maintenir la cohérence du formalisme.
 
-#align(center)[
-  #image("images/graphe_interacteurs_regles.svg", width: 95%)
-]
-
 === Application au Corps de Pompe à Eau (Sous-phase Utilisation Active)
 
-En appliquant ces règles à la sous-phase d'*utilisation active*, le graphe des interacteurs s'établit avec une parfaite rigueur :
-
-#align(center)[
-  #image("images/graphe_interacteurs_pompe.svg", width: 95%)
-]
-
-Les fonctions identifiées s'énoncent selon la norme (verbe à l'infinitif + compléments désignant les EME, sans mention de la solution) :
+En appliquant ces règles à la sous-phase d'*utilisation active*, les fonctions identifiées s'énoncent selon la norme (verbe à l'infinitif + compléments désignant les EME, sans mention de la solution) :
 - *FP1 (Besoin primaire) :* Transmettre la puissance mécanique du producteur d'énergie au fluide caloporteur entrant.
 - *FP2 (Besoin secondaire) :* Transformer le fluide caloporteur entrant en fluide sortant (élévation de pression et guidage directionnel vers les chemises du bloc).
 - *FP3 :* Guider la poulie d'entraînement en rotation dans le référentiel mécanique.
@@ -243,10 +225,6 @@ Une fois le CdCF formalisé, l'équipe de conception doit générer des solution
   Contrairement au FAST descriptif (qui dissèque un produit déjà figé), le _FAST de créativité_ part de la fonction de service pour explorer l'ensemble des *principes issus des sciences appliquées*, avant de dériver vers des *principes technologiques*.
 ]
 
-#align(center)[
-  #image("images/fast_creativite_principe.svg", width: 95%)
-]
-
 === Décomposition par les Sciences Appliquées en Mécanique
 
 Pour stimuler la créativité sans préjugé technologique, on balaye systématiquement les différentes branches de la physique appliquée :
@@ -262,10 +240,6 @@ Pour stimuler la créativité sans préjugé technologique, on balaye systémati
    - Interactions magnétostatiques (aimants permanents, ferromagnétisme).
    - Sustentation magnétique active (paliers sans frottement).
    - Changement de phase liquide-vapeur (caloducs à évaporation/condensation).
-
-#align(center)[
-  #image("images/fast_pompe_application.svg", width: 95%)
-]
 
 === Application au Choix des Principes du Corps de Pompe à Eau
 

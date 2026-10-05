@@ -108,29 +108,30 @@
 
 #slide(title: "4. Étape 2 : Le Graphe du Besoin (« Bête à Cornes »)")[
   #grid(
-    columns: (1.2fr, 0.8fr),
+    columns: (1.1fr, 1fr),
     gutter: 14pt,
     [
-      #align(center)[
-        #image("images/bete_a_cornes.svg", height: 260pt)
+      #card(title: "Les 3 Questions Fondamentales (NF X50-151)", border-color: cnam-blue)[
+        - *À qui / À quoi rend-il service ?* \
+          Au *circuit de refroidissement* et indirectement au bloc moteur et au conducteur.
+        - *Sur qui / Sur quoi agit-il ?* \
+          Sur le *fluide caloporteur* (liquide de refroidissement entrant / sortant).
+        - *Dans quel but le système existe-t-il ?* \
+          *Assurer la circulation forcée du liquide* afin d'évacuer les calories excédentaires du moteur thermique.
       ]
     ],
     [
-      #card(title: "Validation du Besoin", border-color: cnam-red)[
-        #set text(size: 9.8pt)
-        *1. Pourquoi le besoin existe-t-il ?* \
-        Maintenir le moteur thermique dans sa plage optimale (85°C - 105°C).
-        
-        *2. Qu'est-ce qui le ferait évoluer ?* \
-        Régulation thermique active, allègement drastique des véhicules.
-
-        *3. Qu'est-ce qui le ferait disparaître ?* \
-        Moteurs 100% électriques sans liquide, moteurs céramiques adiabatiques.
+      #card(title: "Validation du Besoin (Phrases Autocorrectives)", border-color: cnam-red)[
+        - *Pourquoi ce besoin existe-t-il ?* \
+          Maintenir le moteur dans sa plage thermique optimale (85°C - 105°C).
+        - *Qu'est-ce qui ferait évoluer le besoin ?* \
+          Régulation thermique active pilotée, allègement drastique des véhicules.
+        - *Qu'est-ce qui ferait disparaître le besoin ?* \
+          Moteurs 100% électriques sans liquide, moteurs céramiques adiabatiques.
       ]
-      #v(0.2em)
+      #v(0.3em)
       #card(title: "Verdict", border-color: cnam-blue)[
-        #set text(size: 10pt)
-        *Besoin pleinement validé* pour toute la vie de la gamme moteur.
+        *Besoin pleinement validé* pour l'ensemble du cycle de vie du moteur.
       ]
     ]
   )
@@ -165,9 +166,35 @@
 ]
 
 #slide(title: "6. Profil de Vie : Déroulement Chronologique")[
-  #align(center)[
-    #image("images/cycle_de_vie.svg", height: 265pt)
-  ]
+  #grid(
+    columns: (1fr, 1fr),
+    gutter: 14pt,
+    [
+      #card(title: "1. Concrétisation (H.U.)", border-color: cnam-blue)[
+        - *Définition (BE) :* CAO, calculs, maquette 3D, prototype ABS.
+        - *Industrialisation (Méthodes) :* CFAO, gammes, outillages.
+        - *Fabrication (Usine) :* Fonderie alu, usinage, assemblage robotisé.
+      ]
+      #v(0.3em)
+      #card(title: "2. Distribution & Intégration (H.U.)", border-color: cnam-blue)[
+        - *Logistique :* Stockage, palettisation, transport (vibrations).
+        - *Vente :* 1ère monte (constructeur) et 2e monte (rechange).
+        - *Intégration moteur :* Accostage rapide, vissage au couple, joint.
+      ]
+    ],
+    [
+      #card(title: "3. Exploitation (U & H.U.) ★", border-color: cnam-red)[
+        - *Utilisation active (U) :* Pompage continu, 250 W, silence.
+        - *Utilisation passive (U) :* Véhicule à l'arrêt : étanchéité zéro fuite.
+        - *Maintenance (H.U.) :* Diagnostic fuite, démontabilité atelier.
+      ]
+      #v(0.3em)
+      #card(title: "4. Fin de Vie (H.U.)", border-color: cnam-gray)[
+        - *Démontage moteur :* Désolidarisation rapide du bloc.
+        - *Désassemblage & Recyclage :* Tri matière alu / roulement acier.
+      ]
+    ]
+  )
 ]
 
 #slide(title: "7. Profil de Vie : Concrétisation & Distribution")[
@@ -225,44 +252,54 @@
 
 #slide(title: "10. Étape 4 : Le Graphe des Interacteurs (Règles Formelles)")[
   #grid(
-    columns: (1.2fr, 0.8fr),
+    columns: (1fr, 1fr),
     gutter: 14pt,
     [
-      #align(center)[
-        #image("images/graphe_interacteurs_regles.svg", height: 260pt)
+      #card(title: "1. Tracé Courbe vs Tracé Droit", border-color: cnam-red)[
+        - *Fonction Principale / de Service (FP) :* Tracé *courbe* reliant deux EME à travers le système.
+        - *Fonction Contrainte (FC) :* Tracé *droit (rectiligne)* reliant un EME directement au système.
+        - *Neutralité :* Interdiction formelle de nommer une solution technique dans la bulle système !
+      ]
+      #v(0.3em)
+      #card(title: "2. EME Bi-États (Entrant / Sortant)", border-color: cnam-blue)[
+        - Lorsqu'une matière d'œuvre change d'état au cours de l'action, on la dédouble en :
+          - *$"EME"_(1a)$ :* État initial (ex : Fluide entrant basse pression).
+          - *$"EME"_(1b)$ :* État transformé (ex : Fluide sortant haute pression).
       ]
     ],
     [
-      #card(title: "4 Règles Incontournables", border-color: cnam-red)[
-        #set text(size: 10pt)
-        + *Tracé courbe vs droit :* Courbe pour les FP (relient 2 EME) ; droit pour les FC (1 EME).
-        + *Neutralité :* Interdiction formelle de nommer une solution dans le système.
-        + *EME génériques :* Référentiel neutre et Producteur d'énergie obligatoires.
-        + *EME bi-états :* Différencier l'état initial (1a) et final (1b) de la matière d'œuvre.
+      #card(title: "3. EME Génériques Obligatoires", border-color: cnam-blue)[
+        - *Producteur d'énergie (ou puissance) :* Apport d'énergie externe nécessaire pour respecter la conservation d'énergie.
+        - *Référentiel neutre :* Indispensable pour exprimer le guidage cinématique, le positionnement et la reprise d'efforts.
+      ]
+      #v(0.3em)
+      #card(title: "4. Systèmes Autonomes en Énergie", border-color: cnam-gray)[
+        - Si la source d'énergie est embarquée (batterie, ressort), le producteur est englobé dans la frontière en pointillés.
       ]
     ]
   )
 ]
 
-#slide(title: "11. Graphe des Interacteurs : Application Corps de Pompe")[
+#slide(title: "11. Fonctions de Service du Corps de Pompe (Moteur F)")[
   #grid(
-    columns: (1.25fr, 0.75fr),
+    columns: (1fr, 1.1fr),
     gutter: 14pt,
     [
-      #align(center)[
-        #image("images/graphe_interacteurs_pompe.svg", height: 260pt)
+      #card(title: "Fonctions Principales (Tracé Courbe)", border-color: cnam-red)[
+        - *FP1 (Besoin primaire) :* \
+          Transmettre la puissance mécanique du producteur d'énergie au fluide caloporteur entrant.
+        - *FP2 (Besoin secondaire) :* \
+          Transformer le fluide caloporteur entrant en fluide sortant (canaliser, accélérer, monter en pression).
+        - *FP3 (Guidage cinématique) :* \
+          Guider la poulie d'entraînement en rotation dans le référentiel fixe.
       ]
     ],
     [
-      #card(title: "Fonctions Identifiées", border-color: cnam-blue)[
-        #set text(size: 9.8pt)
-        - *FP1 :* Transmettre la puissance du producteur d'énergie au fluide entrant.
-        - *FP2 :* Transformer le fluide entrant en fluide sortant.
-        - *FP3 :* Guider la poulie dans le référentiel.
-        - *FC1 :* Fixation et étanchéité carter-cylindres.
-        - *FC2 :* Supporter les efforts de la courroie.
-        - *FC3 :* Résister au milieu ambiant sous capot.
-        - *FC4 :* Respecter l'encombrement sous capot.
+      #card(title: "Fonctions Contraintes (Tracé Droit)", border-color: cnam-blue)[
+        - *FC1 (Carter-cylindres) :* Assurer la fixation mécanique et l'étanchéité statique avec le bloc moteur.
+        - *FC2 (Courroie) :* Supporter les efforts axiaux et radiaux transmis par la tension de courroie.
+        - *FC3 (Milieu ambiant) :* Résister aux agressions corrosives et thermiques sous capot (-40°C à +125°C).
+        - *FC4 (Environnement) :* Respecter l'enveloppe spatiale allouée sous capot moteur.
       ]
     ]
   )
@@ -365,14 +402,57 @@
 ]
 
 #slide(title: "17. FAST de Créativité : Structure & Démarche")[
-  #align(center)[
-    #image("images/fast_creativite_principe.svg", height: 265pt)
-  ]
+  #grid(
+    columns: (1fr, 1fr),
+    gutter: 14pt,
+    [
+      #card(title: "Les 3 Axes d'Interrogation FAST", border-color: cnam-red)[
+        - *POURQUOI ? (vers la gauche) :* \
+          Justifie la raison d'être et la finalité de chaque fonction.
+        - *COMMENT ? (vers la droite) :* \
+          Décompose la fonction en principes de plus en plus concrets.
+        - *QUAND ? (verticalement) :* \
+          Identifie les fonctions ou actions menées en simultanéité temporelle.
+      ]
+    ],
+    [
+      #card(title: "La Chaîne d'Innovation APTE / Cnam", border-color: cnam-blue)[
+        #align(center)[
+          *Fonction de Service (CdCF)* \
+          $arrow.b$ \
+          *Principes issus des Sciences Appliquées* \
+          (Mécanique classique, fluides, élasticité, magnétisme) \
+          $arrow.b$ \
+          *Principes Technologiques* \
+          (Rouet à aubes, volute spirale, roulement étanche) \
+          $arrow.b$ \
+          *Solutions Constructives & Composants CAO*
+        ]
+      ]
+    ]
+  )
 ]
 
 #slide(title: "18. FAST Multi-Fonctions Appliqué au Corps de Pompe")[
-  #align(center)[
-    #image("images/fast_pompe_application.svg", height: 265pt)
+  #table(
+    columns: (1.2fr, 1.8fr, 2fr),
+    fill: (x, y) => if y == 0 { cnam-blue } else if calc.even(y) { rgb("#F8FAFC") } else { white },
+    stroke: 0.4pt + rgb("#CBD5E1"),
+    inset: (x: 8pt, y: 7pt),
+    table.header([*Fonction de service*], [*Science appliquée explorée*], [*Principe technologique retenu*]),
+    [FP1 : Transmettre la puissance au fluide],
+    [Mécanique des solides indéformables (Dynamique / PFD)],
+    [*Rouet centrifuge à pales tournantes*\ (écartés : membrane pulsatile, souffleur)],
+    [FP2 : Transformer fluide entrant en sortant],
+    [Mécanique des solides indéformables (Statique / Bernoulli)],
+    [*Volute spirale divergente et canal*\ (conversion énergie cinétique en pression)],
+    [FP3 : Guider la poulie dans le référentiel],
+    [Mécanique de contact solide indéformable],
+    [*Roulement double étanche à billes*\ (exploré : sustentation magnétique sans contact)]
+  )
+  #v(0.3em)
+  #card(title: "Conclusion sur les Formes de la Pièce", border-color: cnam-red)[
+    La volute et le rotor répondent à FP1 et FP2 ; le logement d'alésage répond à FP3 ; le plan de joint et les bossages répondent aux contraintes de fabrication (fonderie) et de maintenance (démontage).
   ]
 ]
 
