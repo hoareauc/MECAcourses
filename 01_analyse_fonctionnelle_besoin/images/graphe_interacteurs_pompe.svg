@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 560" width="940" height="560">
+  <defs>
+    <filter id="shadow4" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2.5" flood-color="#1B254B" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="940" height="560" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <!-- Titre -->
+  <rect x="20" y="14" width="900" height="34" rx="6" fill="#1B254B"/>
+  <text x="470" y="37" font-family="Arial, Segoe UI, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+    GRAPHE DES INTERACTEURS — CORPS DE POMPE À EAU MOTEUR F (PHASE EXPLOITATION / UTILISATION ACTIVE)
+  </text>
+
+  <!-- Système Central -->
+  <g filter="url(#shadow4)">
+    <ellipse cx="470" cy="275" rx="80" ry="42" fill="#FFFFFF" stroke="#A60038" stroke-width="3"/>
+    <text x="470" y="270" font-family="Arial" font-size="14" font-weight="bold" fill="#A60038" text-anchor="middle">Système</text>
+    <text x="470" y="288" font-family="Arial" font-size="10.5" font-weight="bold" fill="#1B254B" text-anchor="middle">(Corps de pompe)</text>
+  </g>
+
+  <!-- EME Périphériques -->
+  <!-- Haut Centre : Poulie / Courroie -->
+  <ellipse cx="470" cy="90" rx="68" ry="28" fill="#FFFFFF" stroke="#1B254B" stroke-width="2"/>
+  <text x="470" y="94" font-family="Arial" font-size="11.5" font-weight="bold" fill="#1B254B" text-anchor="middle">Poulie / Courroie</text>
+
+  <!-- Haut Droite : Producteur d'énergie -->
+  <ellipse cx="680" cy="115" rx="72" ry="28" fill="#FFFFFF" stroke="#1B254B" stroke-width="2"/>
+  <text x="680" y="114" font-family="Arial" font-size="11" font-weight="bold" fill="#1B254B" text-anchor="middle">Producteur</text>
+  <text x="680" y="128" font-family="Arial" font-size="10" fill="#64748B" text-anchor="middle">d'énergie</text>
+
+  <!-- Haut Gauche : Référentiel fixe -->
+  <ellipse cx="260" cy="115" rx="68" ry="28" fill="#FFFFFF" stroke="#1B254B" stroke-width="2"/>
+  <text x="260" y="119" font-family="Arial" font-size="11.5" font-weight="bold" fill="#1B254B" text-anchor="middle">Référentiel</text>
+
+  <!-- Gauche Milieu : Carter-cylindre -->
+  <ellipse cx="140" cy="235" rx="72" ry="28" fill="#FFFFFF" stroke="#1B254B" stroke-width="2"/>
+  <text x="140" y="234" font-family="Arial" font-size="11" font-weight="bold" fill="#1B254B" text-anchor="middle">Carter-cylindre</text>
+  <text x="140" y="248" font-family="Arial" font-size="9" fill="#64748B" text-anchor="middle">(Bloc moteur)</text>
+
+  <!-- Gauche Bas : Environnement sous capot -->
+  <ellipse cx="190" cy="390" rx="75" ry="28" fill="#FFFFFF" stroke="#1B254B" stroke-width="2"/>
+  <text x="190" y="394" font-family="Arial" font-size="11" font-weight="bold" fill="#1B254B" text-anchor="middle">Environnement</text>
+
+  <!-- Bas Centre : Fluide sortant -->
+  <ellipse cx="470" cy="460" rx="70" ry="28" fill="#FFFFFF" stroke="#1B254B" stroke-width="2"/>
+  <text x="470" y="458" font-family="Arial" font-size="11" font-weight="bold" fill="#1B254B" text-anchor="middle">Fluide sortant</text>
+  <text x="470" y="472" font-family="Arial" font-size="9" fill="#64748B" text-anchor="middle">(Liquide sous pression)</text>
+
+  <!-- Droite Bas : Fluide entrant -->
+  <ellipse cx="760" cy="385" rx="70" ry="28" fill="#FFFFFF" stroke="#1B254B" stroke-width="2"/>
+  <text x="760" y="383" font-family="Arial" font-size="11" font-weight="bold" fill="#1B254B" text-anchor="middle">Fluide entrant</text>
+  <text x="760" y="397" font-family="Arial" font-size="9" fill="#64748B" text-anchor="middle">(Liquide basse pression)</text>
+
+  <!-- Droite Haut/Milieu : Milieu ambiant -->
+  <ellipse cx="800" cy="225" rx="68" ry="28" fill="#FFFFFF" stroke="#1B254B" stroke-width="2"/>
+  <text x="800" y="224" font-family="Arial" font-size="11" font-weight="bold" fill="#1B254B" text-anchor="middle">Milieu ambiant</text>
+  <text x="800" y="238" font-family="Arial" font-size="9" fill="#64748B" text-anchor="middle">(Air, chaud, poussière)</text>
+
+  <!-- FONCTIONS PRINCIPALES (COURBES - ROUGE CNAM) -->
+  <!-- FP1 : Producteur d'énergie -> Fluide entrant (Besoin primaire) -->
+  <path d="M 640 135 C 570 210 650 330 710 370" fill="none" stroke="#A60038" stroke-width="3"/>
+  <rect x="585" y="235" width="36" height="20" rx="4" fill="#A60038"/>
+  <text x="603" y="249" font-family="Arial" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">FP1</text>
+
+  <!-- FP2 : Fluide entrant -> Fluide sortant (Besoin secondaire) -->
+  <path d="M 700 400 C 620 440 580 435 540 450" fill="none" stroke="#A60038" stroke-width="3"/>
+  <rect x="615" y="420" width="36" height="20" rx="4" fill="#A60038"/>
+  <text x="633" y="434" font-family="Arial" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">FP2</text>
+
+  <!-- FP3 : Poulie/Courroie -> Référentiel (Guidage en rotation) -->
+  <path d="M 410 100 C 350 110 330 110 320 115" fill="none" stroke="#A60038" stroke-width="3"/>
+  <rect x="345" y="85" width="36" height="20" rx="4" fill="#A60038"/>
+  <text x="363" y="99" font-family="Arial" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">FP3</text>
+
+  <!-- FONCTIONS CONTRAINTES (DROITES - BLEU CNAM / VERT SOMBRE) -->
+  <!-- FC1 : Carter-cylindre vers Système -->
+  <line x1="210" y1="245" x2="390" y2="265" stroke="#1B254B" stroke-width="2"/>
+  <rect x="290" y="245" width="32" height="18" rx="3" fill="#1B254B"/>
+  <text x="306" y="258" font-family="Arial" font-size="10" font-weight="bold" fill="#FFFFFF" text-anchor="middle">FC1</text>
+
+  <!-- FC2 : Poulie vers Système (efforts axiaux/radiaux) -->
+  <line x1="470" y1="120" x2="470" y2="230" stroke="#1B254B" stroke-width="2"/>
+  <rect x="455" y="165" width="32" height="18" rx="3" fill="#1B254B"/>
+  <text x="471" y="178" font-family="Arial" font-size="10" font-weight="bold" fill="#FFFFFF" text-anchor="middle">FC2</text>
+
+  <!-- FC3 : Milieu ambiant vers Système (corrosion, sel) -->
+  <line x1="735" y1="235" x2="550" y2="265" stroke="#1B254B" stroke-width="2"/>
+  <rect x="635" y="242" width="32" height="18" rx="3" fill="#1B254B"/>
+  <text x="651" y="255" font-family="Arial" font-size="10" font-weight="bold" fill="#FFFFFF" text-anchor="middle">FC3</text>
+
+  <!-- FC4 : Environnement vers Système (encombrement sous capot) -->
+  <line x1="260" y1="370" x2="400" y2="305" stroke="#1B254B" stroke-width="2"/>
+  <rect x="315" y="325" width="32" height="18" rx="3" fill="#1B254B"/>
+  <text x="331" y="338" font-family="Arial" font-size="10" font-weight="bold" fill="#FFFFFF" text-anchor="middle">FC4</text>
+
+  <!-- Sous-titre de la phase étudiée -->
+  <rect x="320" y="515" width="300" height="28" rx="5" fill="#E2E8F0"/>
+  <text x="470" y="534" font-family="Arial" font-size="11" font-weight="bold" fill="#1B254B" text-anchor="middle">
+    ⇒ Phase Exploitation : Utilisation active ⇐
+  </text>
+</svg>

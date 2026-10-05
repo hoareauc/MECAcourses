@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" width="960" height="520">
+  <defs>
+    <filter id="shadow6" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2.5" flood-color="#1B254B" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="520" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+
+  <!-- Titre -->
+  <rect x="20" y="14" width="920" height="34" rx="6" fill="#1B254B"/>
+  <text x="480" y="37" font-family="Arial, Segoe UI, sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+    FAST DE CRÉATIVITÉ MULTI-FONCTIONS — CORPS DE POMPE À EAU MOTEUR F
+  </text>
+
+  <!-- 3 Rangées pour les 3 fonctions clés -->
+  <!-- RANGÉE 1 : FP1 Transmettre puissance -->
+  <g transform="translate(25, 65)">
+    <!-- Fonction -->
+    <rect x="10" y="15" width="220" height="70" rx="6" fill="#FFFFFF" stroke="#A60038" stroke-width="2"/>
+    <text x="120" y="38" font-family="Arial" font-size="11" font-weight="bold" fill="#A60038" text-anchor="middle">FP1 : Transmettre puissance</text>
+    <text x="120" y="55" font-family="Arial" font-size="10.5" fill="#1B254B" text-anchor="middle">du producteur d'énergie</text>
+    <text x="120" y="70" font-family="Arial" font-size="10.5" fill="#1B254B" text-anchor="middle">au fluide entrant (250 W)</text>
+
+    <!-- Principes Scientifiques explorés -->
+    <line x1="230" y1="50" x2="280" y2="50" stroke="#A60038" stroke-width="1.5"/>
+    <rect x="280" y="15" width="290" height="70" rx="6" fill="#FFFFFF" stroke="#1B254B" stroke-width="1.5"/>
+    <text x="425" y="35" font-family="Arial" font-size="10.5" font-weight="bold" fill="#1B254B" text-anchor="middle">Mécanique classique / Dynamique</text>
+    <text x="425" y="52" font-family="Arial" font-size="9.5" fill="#475569" text-anchor="middle">• Solide rigide mobile (PFD)</text>
+    <text x="425" y="68" font-family="Arial" font-size="9" fill="#64748B" text-anchor="middle">• Fluide / Piston / Souffleur (écartés)</text>
+
+    <!-- Solution Technologique Retenue -->
+    <line x1="570" y1="50" x2="620" y2="50" stroke="#1B254B" stroke-width="1.5"/>
+    <rect x="620" y="18" width="280" height="64" rx="32" fill="#FEF2F4" stroke="#A60038" stroke-width="2"/>
+    <text x="760" y="44" font-family="Arial" font-size="12" font-weight="bold" fill="#A60038" text-anchor="middle">ROUET CENTRIFUGE À PALES</text>
+    <text x="760" y="62" font-family="Arial" font-size="9.5" fill="#1B254B" text-anchor="middle">Rotor monté sur axe entraîné par courroie</text>
+  </g>
+
+  <!-- RANGÉE 2 : FP2 Transformer fluide entrant en fluide sortant -->
+  <g transform="translate(25, 185)">
+    <!-- Fonction -->
+    <rect x="10" y="15" width="220" height="70" rx="6" fill="#FFFFFF" stroke="#A60038" stroke-width="2"/>
+    <text x="120" y="38" font-family="Arial" font-size="11" font-weight="bold" fill="#A60038" text-anchor="middle">FP2 : Transformer</text>
+    <text x="120" y="55" font-family="Arial" font-size="10.5" fill="#1B254B" text-anchor="middle">le fluide entrant en fluide</text>
+    <text x="120" y="70" font-family="Arial" font-size="10.5" fill="#1B254B" text-anchor="middle">sortant (accélération &amp; pression)</text>
+
+    <!-- Principes Scientifiques -->
+    <line x1="230" y1="50" x2="280" y2="50" stroke="#A60038" stroke-width="1.5"/>
+    <rect x="280" y="15" width="290" height="70" rx="6" fill="#FFFFFF" stroke="#1B254B" stroke-width="1.5"/>
+    <text x="425" y="35" font-family="Arial" font-size="10.5" font-weight="bold" fill="#1B254B" text-anchor="middle">Mécanique classique / Statique</text>
+    <text x="425" y="52" font-family="Arial" font-size="9.5" fill="#475569" text-anchor="middle">• Solides indéformables fixes (PFS)</text>
+    <text x="425" y="68" font-family="Arial" font-size="9" fill="#64748B" text-anchor="middle">• Guidage hydrodynamique interne</text>
+
+    <!-- Solution Retenue -->
+    <line x1="570" y1="50" x2="620" y2="50" stroke="#1B254B" stroke-width="1.5"/>
+    <rect x="620" y="18" width="280" height="64" rx="32" fill="#FEF2F4" stroke="#A60038" stroke-width="2"/>
+    <text x="760" y="44" font-family="Arial" font-size="12" font-weight="bold" fill="#A60038" text-anchor="middle">VOLUTE SPIRALE &amp; CANAL DE SORTIE</text>
+    <text x="760" y="62" font-family="Arial" font-size="9.5" fill="#1B254B" text-anchor="middle">Intégrée dans le corps coulé alu/fonte</text>
+  </g>
+
+  <!-- RANGÉE 3 : FP3 Guider la poulie dans le référentiel -->
+  <g transform="translate(25, 305)">
+    <!-- Fonction -->
+    <rect x="10" y="15" width="220" height="70" rx="6" fill="#FFFFFF" stroke="#A60038" stroke-width="2"/>
+    <text x="120" y="38" font-family="Arial" font-size="11" font-weight="bold" fill="#A60038" text-anchor="middle">FP3 : Guider la poulie</text>
+    <text x="120" y="55" font-family="Arial" font-size="10.5" fill="#1B254B" text-anchor="middle">dans le référentiel</text>
+    <text x="120" y="70" font-family="Arial" font-size="10.5" fill="#1B254B" text-anchor="middle">(Reprise d'efforts courroie)</text>
+
+    <!-- Principes Scientifiques -->
+    <line x1="230" y1="50" x2="280" y2="50" stroke="#A60038" stroke-width="1.5"/>
+    <rect x="280" y="15" width="290" height="70" rx="6" fill="#FFFFFF" stroke="#1B254B" stroke-width="1.5"/>
+    <text x="425" y="35" font-family="Arial" font-size="10.5" font-weight="bold" fill="#1B254B" text-anchor="middle">Guidage en rotation mécanique</text>
+    <text x="425" y="52" font-family="Arial" font-size="9.5" fill="#475569" text-anchor="middle">• Contact solide / roulement étanche</text>
+    <text x="425" y="68" font-family="Arial" font-size="9" fill="#64748B" text-anchor="middle">• Paliers hydrostatiques / magnétiques (innovations)</text>
+
+    <!-- Solution Retenue -->
+    <line x1="570" y1="50" x2="620" y2="50" stroke="#1B254B" stroke-width="1.5"/>
+    <rect x="620" y="18" width="280" height="64" rx="32" fill="#FEF2F4" stroke="#A60038" stroke-width="2"/>
+    <text x="760" y="44" font-family="Arial" font-size="12" font-weight="bold" fill="#A60038" text-anchor="middle">ROULEMENT DOUBLE INTÉGRÉ</text>
+    <text x="760" y="62" font-family="Arial" font-size="9.5" fill="#1B254B" text-anchor="middle">Avec joint cyclam d'étanchéité dynamique</text>
+  </g>
+
+  <!-- Bandeau Synthèse -->
+  <rect x="35" y="440" width="890" height="50" rx="6" fill="#1B254B"/>
+  <text x="50" y="462" font-family="Arial" font-size="11" font-weight="bold" fill="#FFFFFF">CONSTAT SUR LE PRODUIT ABOUTI :</text>
+  <text x="50" y="478" font-family="Arial" font-size="10.5" fill="#E2E8F0">
+    La solution schématique comprend 2 composants fonctionnels (rotor + carter). La solution industrielle en comporte 4 à cause des contraintes de fabrication (nervures, pattes), d'assemblage (scission du corps) et de maintenance (vis, joint, détection de fuite).
+  </text>
+</svg>
